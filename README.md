@@ -1,7 +1,7 @@
 mbentley/fsv
 ============
 
-docker image for fsv (file system visualizer) using Ubuntu 12.04
+docker image for fsv ([file system visualizer](https://github.com/mcuelenaere/fsv)) using Ubuntu 12.04
 
 To pull this image: `docker pull mbentley/fsv`
 
