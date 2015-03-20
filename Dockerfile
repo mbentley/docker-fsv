@@ -10,4 +10,4 @@ RUN (git clone https://github.com/mcuelenaere/fsv.git &&\
   make &&\
   make install)
 
-CMD ["/usr/local/bin/fsv"]
+ENTRYPOINT ["/usr/local/bin/fsv"]
