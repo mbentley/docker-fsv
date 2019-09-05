@@ -12,3 +12,11 @@ Thanks to slobo for his [comment](https://github.com/docker/docker/issues/8710#i
 Running fsv on OS X: `docker run -it -e DISPLAY=<ip-of-your-box>:0 mbentley/fsv`
 
 Running fsv in X11: `docker run -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY mbentley/fsv`
+
+---
+
+Note: If you're running a newer version of XQuartz, you may need to run this to allow rendering to function and restart XQuartz:
+
+```
+defaults write org.macosforge.xquartz.X11 enable_iglx -bool true
+```
