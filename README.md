@@ -5,6 +5,8 @@ docker image for fsv ([file system visualizer](https://github.com/mcuelenaere/fs
 
 To pull this image: `docker pull mbentley/fsv`
 
+![IT'S A UNIX SYSTEM](./fsv.gif)
+
 On macOS, you need to run XQuartz and use `socat` to make the X11 display available over TCP on the network:
 ```
 socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"$DISPLAY\"
