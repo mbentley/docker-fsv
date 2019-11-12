@@ -20,6 +20,12 @@ docker run -it --rm -e DISPLAY=<ip-of-your-machine>:0 mbentley/fsv
 ```
 
 Running fsv directly in X11:
+
+Allow connections to the X session:
+```
+xhost +SI:localuser:$(whoami)
+```
+
 ```
 docker run -it --rm -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY mbentley/fsv
 ```
